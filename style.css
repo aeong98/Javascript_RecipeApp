@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: "Poppins", san-serif; */
+    font-family: 'Jua', sans-serif;
+    font-size:1.5rem;
+    margin: 0;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+}
+
+button{
+    border:0;
+    outline:0;
+    background: none;
+}
+
+img{
+    max-width:100%;
+}
+
+/*HEDAER*/
+header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem;
+}
+
+/*CONTAINER*/
+
+.mobile-container{
+    background-color: #fff;
+    width: 700px;
+    box-shadow: 0 0 5px #3333331A;
+    border-radius: 3px;
+    overflow:hidden;
+    position:relative;
+}
+
+
+header input{
+    background-color: #eee;
+    border:none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+header button{
+    color: #aaa;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+header button:hover{
+    color:salmon;
+    cursor: pointer;
+}
+.fav-container{
+    background-color: #E2E2E2;
+    padding: 0.25rem 1rem;
+    text-align: center;
+}
+
+
+.fav-meals{
+    display:flex;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style-type:none;
+    padding:0;   
+}
+
+.fav-meals li{
+    margin: 5px;
+    position: relative;
+}
+
+.fav-meals .clear{
+    position: absolute;
+    opacity: 0;
+    top:-0.5rem;
+    right:-0.5rem;
+}
+
+.fav-meals li:hover .clear{
+    cursor: pointer;
+    opacity: 1;
+}
+.fav-meals li img{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #3333331A;
+    object-fit:cover;
+    height: 100px;
+    width: 100px;
+}
+
+.fav-meals li span{
+    display:inline-block;
+    width: 100px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow :hidden;
+    text-overflow:ellipsis;
+    position:absolute;
+    bottom: -1rem;
+    left: 0.3rem;
+}
+
+.fav-meals li:hover span{
+    white-space:normal;
+}
+
+
+.meal{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #3333331A;
+    overflow:hidden;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.meal:hover{
+    box-shadow: 0 0 10px 5px skyblue;
+}
+
+.meal-header{
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    box-shadow: 0 0 10px 5px #3333331A;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    height: 80%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.meal-body{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.meal-body h4{
+    margin:0;
+}
+.meal-body .fav-btn{
+    font-size: 1.5rem;
+    color: rgb(197,188,188);
+    cursor: pointer;
+}
+.meal-body .fav-btn:hover{
+    color:salmon;
+}
+.meal-body .fav-btn .active{
+    color:salmon;
+}
+
+.popup-container{
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:fixed;
+    bottom:0;
+    right:0;
+    top:0;
+    left:0;
+}
+.hidden{
+    opacity: 0;
+    pointer-events:none;
+}
+.popup{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 2rem;
+    max-width:600px;
+    max-height:80%;
+    overflow:auto;
+    position:relative;
+}
+.popup img{
+    margin : auto 0;
+}
+.popup .close-popup{
+    position:absolute;
+    font-size:1.5rem;
+    top:1rem;
+    right:1rem;
+}
+.popup .close-popup:hover{
+    cursor:pointer;
+    color: salmon;
+}
+.popup #liked{
+    color:rgb(197,188,188);
+    font-size: 2rem;
+    margin-left:500px;
+    margin-bottom:10px;
+}
+.popup #liked:hover{
+    color:salmon;
+}
+.meal-info h1{
+    text-align: center;
+}
+
+::-webkit-scrollbar { width: 10px; } /* 스크롤 바 */
+
+::-webkit-scrollbar-track { background-color:#fff; } /* 스크롤 바 밑의 배경 */
+
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 10px; } /* 실질적 스크롤 바 */
+
+::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+
+::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+
+::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */

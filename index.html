@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82b3624cb5.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="mobile-container">
+        <header>
+            <span class="header-title">🍴 Aebong Kitchen 🍴</span>
+            <div class="header-search">
+                <input type="text" id="search-term">
+                <button id="search"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        <div class="fav-container">
+            <h3>📍찜해둔 레시피</h3>
+            <ul class="fav-meals" id="fav-meals"> 
+                <!-- <li>   
+                    <img src="https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg" alt="pancakes">
+                    <span><br>pancakes</span>
+
+                </li>
+                <li>
+                    <img src="https://www.themealdb.com/images/media/meals/vwuprt1511813703.jpg" alt="cookie bars">
+                    <span><br>cookie bars</span>
+
+                </li>
+                <li>
+                    <img src="https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg" alt="cheese tart">
+                    <span><br>cheese tart</span>
+                </li>
+                <li>
+                    <img src="https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg" alt="christmas cakes">
+                    <span><br>christmas cake</span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="meals" id="meals">
+            <div class="meal">
+                <!-- <div class="meal-header">
+                    <span class="random">
+                        Random Recipe
+                    </span>
+                    <img src="https://www.themealdb.com/images/media/meals/wprvrw1511641295.jpg" alt="tarte">
+                </div>
+                <div class="meal-body">
+                    <h4>Peakan Pie</h4>
+                    <button class="fav-btn"><i class="far fa-heart"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+            <button id="close-popup" class="close-popup"><i class="fas fa-times"></i></button>
+            <div class="meal-info" id="meal-info">
+                <!-- <h1>Meal title</h1>
+                <img src="https://www.themealdb.com/images/media/meals/wprvrw1511641295.jpg" alt="tarte">
+                <p>
+                    dlkfaj;svdddzzzzzzzzzzzzzzzxcvzcxlkvj
+                </p>
+                <ul>
+                    <li>ing 1 / measure</li>
+                    <li>ing 2 / measure</li>
+                    <li>ing 3 / measure</li>
+                </ul> -->
+            </div>
+            <button id="liked"><i class="far fa-heart"></i></button>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
